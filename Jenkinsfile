@@ -8,7 +8,7 @@ pipeline {
                 anyOf {
                     branch 'main'
                     expression {
-                        env.BRANCH_NAME.startsWith('feature')
+                        env.BRANCH_NAME?.startsWith('feature')
                     }
                 }
             }
@@ -24,7 +24,7 @@ pipeline {
                 anyOf {
                     branch 'main'
                     expression {
-                        env.BRANCH_NAME.startsWith('feature')
+                        env.BRANCH_NAME?.startsWith('feature')
                     }
                 }
             }
@@ -40,7 +40,7 @@ pipeline {
                 anyOf {
                     branch 'main'
                     expression {
-                        env.BRANCH_NAME.startsWith('feature')
+                        env.BRANCH_NAME?.startsWith('feature')
                     }
                 }
             }
